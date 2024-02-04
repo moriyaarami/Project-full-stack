@@ -329,27 +329,30 @@ footer h2 {
   margin-left: 10px;
 }
 
-@media screen and (min-width: 200px) and (max-width: 1200px) {
+@media screen and (min-width: 200px) and (max-width: 500px) {
+  body {
+    direction: ltr;
+  }
   #webs {
     display: none;
   }
   #mobile {
-    width: 100%;
+    width: 100vw;
     height: 5em;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
-    position: absolute;
-    top: 0;
+    justify-content: start;
     position: fixed;
     background-color: white;
   }
-  /*  #mobile {
-                      justify-content: space-between;
-                      position: fixed;
-                      background-color: white;
-                  } */
-  #nav-phone {
+  #mobile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0px 10px;
+  }
+  #mobile #nav-phone {
     display: flex;
     flex-direction: column;
     gap: 0.5em;
@@ -357,24 +360,39 @@ footer h2 {
     right: 0;
     margin-right: 2em;
   }
-  #nav-phone > div {
+  #mobile #nav-phone > div {
     width: 2.5em;
     height: 0.25em;
     background-color: #1AE0EC;
   }
-  #open-close {
-    width: 20vw;
-    position: fixed;
-    flex-direction: column;
-    justify-content: end;
-    margin-top: 3em;
-    gap: 1em;
-    background-color: white;
+  #mobile #open-close {
+    height: 20vh;
+    width: 30vw;
     display: flex;
     text-align: center;
+    flex-direction: column;
+    justify-content: start;
+    position: fixed;
+    right: 0;
+    top: 80px;
+    gap: 1em;
+    background-color: white;
   }
-  ul > a > li {
-    text-align: center;
+  #mobile ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 3.5em;
+    direction: rtl;
+    font-size: 1em;
+  }
+  #mobile ul > a {
+    color: black;
+    text-decoration: none;
+  }
+  #mobile a:hover {
+    color: rgb(135, 203, 226);
+    font-size: 1.1em;
   }
   header {
     width: 100vw;
