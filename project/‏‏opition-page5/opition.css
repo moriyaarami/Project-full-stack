@@ -10,6 +10,11 @@ body {
     overflow-y: hidden;
 }
 
+.nav-item {
+    display: flex;
+    flex-direction: row;
+}
+
 .navbar-brand img {
     margin-right: 80px;
     width: 50px;

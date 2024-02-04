@@ -17,6 +17,11 @@ body {
     border-radius: 50%;
 }
 
+.nav-item {
+    display: flex;
+    flex-direction: row;
+}
+
 .card-body {
     /*   background-image: url(../image/OIP.jpeg);
     background-repeat: no-repeat;
