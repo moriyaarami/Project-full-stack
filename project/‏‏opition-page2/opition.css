@@ -7,48 +7,55 @@
 body {
     direction: rtl;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .navbar-brand img {
     margin-right: 80px;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
 }
 
 .card-body {
-    background: #13E8F163 0% 0% no-repeat padding-box;
-}
-
-.card-body p {
-    color: #fff;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    /*   background-image: url(../image/OIP.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: lightblue;
 }
 
 .card-body h5 {
+    color: #000000;
     font-weight: bold;
-    font-size: 2.5em;
-    color: #fff;
+    font-size: 2em;
+
 }
 
-a .btn-primary {
+.card-body p {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #000000;
+}
+
+
+/* a .btn-primary {
     background-color: #fff;
     color: black;
 }
+ */
 
-.img img {
-    margin: 5px 20px;
-    width: 70px;
-    height: 70px;
-
-}
 
 .img {
     box-shadow: 3px 3px 12px gray;
-    height: 80px;
+    height: 60px;
 }
 
+.img img {
+
+    width: 60px;
+    height: 60px;
+
+}
 
 
 .text-center {
@@ -58,18 +65,19 @@ a .btn-primary {
 
 .text-center .rounded {
     width: 50vw;
-    height: 55vh;
-
-    padding: 10px;
+    height: 50vh;
+    padding-top: 10px;
 }
 
 footer {
-    color: white;
+    color: rgb(0, 0, 0);
     width: 100vw;
-    height: 40px;
+    height: 20px;
     padding-right: 30px;
-
-    background-color: black;
+    background-color: lightblue;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 @media screen and (min-width: 250px) and (max-width:1000px) {
