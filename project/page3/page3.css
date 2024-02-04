@@ -1,0 +1,215 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100vw;
+    height: 70vh;
+    background-image: url(../image/bgimage3.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: contain;
+}
+
+h1 {
+    color: #D3E10E;
+    font-size: 80px;
+    font: normal normal bold 86px/113px Assistant;
+    text-align: center;
+    padding-top: 20vh;
+}
+
+p {
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+    font: normal normal normal 20px/26px Assistant;
+}
+
+form {
+    direction: rtl;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    height: 40px;
+    margin-top: 100px;
+}
+
+label {
+    display: block;
+    font: normal normal bold 16px/21px Assistant;
+    color: #011560;
+    text-align: right;
+    margin: 0 20px;
+}
+
+input {
+    width: 400px;
+    height: 50px;
+    background-color: #F6F6F6;
+    border: 0;
+    border-bottom: 4px solid #D3E10E;
+    margin: 0 20px;
+}
+
+button {
+    font: normal normal bold 22px/30px Assistant;
+    background-color: #D3E10E;
+    border: 0;
+    width: 170px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+@media (min-width:270px) and (max-width:300px) {
+    header {
+        width: 100vw;
+        height: 50vh;
+        background-image: url(../image/bgimage3-MOBILE.jpg);
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-size: contain;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    p {
+        display: none;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        width: 100vw;
+    }
+
+    form div {
+        width: 100vw;
+        margin: 5px;
+    }
+
+    label {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    input {
+        width: 85%;
+        height: 30px;
+    }
+
+    button {
+        width: 85%;
+        height: 30px;
+        font-size: 1em;
+        margin: 20px;
+    }
+}
+
+@media (min-width:295px) and (max-width:400px) {
+    header {
+        width: 100vw;
+        height: 60vh;
+        background-image: url(bgimage3-MOBILE.jpg);
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-size: contain;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    p {
+        display: none;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+        width: 100vw;
+    }
+
+    form div {
+        width: 100vw;
+        margin: 5px;
+    }
+
+    label {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    input {
+        width: 88%;
+        height: 30px;
+    }
+
+    button {
+        width: 88%;
+        height: 30px;
+        font-size: 1em;
+        margin: 20px;
+    }
+}
+
+@media (min-width:395px) and (max-width:1200px) {
+    header {
+        width: 100vw;
+        height: 50vh;
+        background-image: url(bgimage3-MOBILE.jpg);
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-size: contain;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    p {
+        display: none;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        width: 100vw;
+    }
+
+    form div {
+        width: 100vw;
+        margin: 5px;
+    }
+
+    label {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    input {
+        width: 88%;
+        height: 30px;
+    }
+
+    button {
+        width: 88%;
+        height: 30px;
+        font-size: 1em;
+        margin: 20px;
+    }
+}

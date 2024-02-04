@@ -1,0 +1,147 @@
+.jobs {
+
+    height: 120vh;
+    background-color: #e0d4d4;
+
+    h1 {
+        text-align: center;
+
+    }
+
+    p {
+        text-align: center;
+        margin-bottom: 50px;
+        margin-top: 20px;
+
+    }
+
+
+    .container {
+        width: 800px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 45vh);
+        gap: 30px;
+        margin: 0 auto;
+
+
+        .box {
+            background-color: #fff;
+            box-shadow: 3px 3px 12px grey;
+            border-radius: 15px;
+            height: 45vh;
+            margin-bottom: 10px;
+
+            a {
+                text-decoration: none;
+                color: #000;
+                border: 1px solid #000;
+                background-color: lightblue;
+                border-radius: 15px;
+                padding: 2px 5px;
+                margin-right: 60px;
+
+            }
+        }
+
+        .container2 {
+            width: 250px;
+            height: 5vh;
+            margin: 0 auto;
+
+            .iconsJobs {
+                width: 50px;
+                height: 50px;
+                display: flex;
+                flex-direction: row;
+                margin-right: 50px;
+                margin-bottom: 20px;
+                margin-top: 20px;
+
+            }
+
+            /*  .iconsJobs {
+                width: 60px;
+                height: 40px;
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+                justify-content: start;
+            } */
+
+            h1 {
+                text-align: center;
+
+            }
+
+            p {
+                text-align: center;
+                margin-bottom: 1px;
+
+            }
+
+
+        }
+    }
+
+    div[class^="image1"] {
+        background-image: url("opition-page1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 10px;
+        width: 250px;
+        height: 130px;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    div[class^="image2"] {
+        background-image: url("opition-page2.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 10px;
+        width: 250px;
+        height: 130px;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    div[class^="image3"] {
+        background-image: url("opition-page3.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 10px;
+        width: 250px;
+        height: 130px;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    div[class^="image4"] {
+        background-image: url("opition-page4.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 10px;
+        width: 250px;
+        height: 130px;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    div[class^="image5"] {
+        background-image: url("opition-page5.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 10px;
+        width: 250px;
+        height: 130px;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    div[class^="image6"] {
+        background-image: url("opition-page6.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 10px;
+        width: 250px;
+        height: 130px;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+}

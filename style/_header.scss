@@ -1,0 +1,37 @@
+header {
+    background-color: lightblue;
+    height: 40vh;
+
+    .container {
+        width: 300px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+
+
+        h1 {
+            text-align: center;
+            margin-top: 5vh;
+        }
+
+        p {
+            text-align: center;
+            margin-top: 10px;
+        }
+    }
+
+}
+
+.icons {
+    width: 100vw;
+    height: 60px;
+    box-shadow: 3px 3px 12px gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 3px;
+
+
+}

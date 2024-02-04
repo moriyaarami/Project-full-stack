@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../image"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../_FisTok_/Bootsrap"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "indexPage"
+	}
+}

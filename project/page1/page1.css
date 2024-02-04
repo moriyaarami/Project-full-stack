@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#281EFF, #2DFF8C);
+}
+
+#container {
+    width: 800px;
+    height: 300px;
+    direction: rtl;
+}
+
+h1 {
+
+    color: #fff;
+    font: normal normal normal 160px/231px Satisfy;
+    text-align: center;
+}
+
+p {
+    color: #fff;
+    font: normal normal normal 32px/38px Varela Round;
+    text-align: center;
+    margin: 10px;
+}
+
+.p {
+    font: normal normal normal 16px/20px Varela Round;
+    text-align: center;
+}
+
+form {
+    direction: rtl;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 50px;
+}
+
+input[type="submit"] {
+    width: 200px;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid wheat;
+    color: black;
+    font-family: Varela Round, Regular;
+    margin-right: 20px;
+
+}
+
+label {
+    display: block;
+    color: #fff;
+    font: normal normal normal 16px/20px Varela Round;
+    text-align: right;
+    margin-right: 20px;
+}
+
+input {
+    width: 400px;
+    height: 50px;
+    background-color: #F6F6F624;
+    border-color: white;
+    margin: 5px 0px 0px 10px;
+    margin-right: 20px;
+}
+
+@media (max-width:600px) {
+
+    .container {
+        width: 500px;
+    }
+
+    h1 {
+
+        color: #fff;
+        font: normal normal normal 60px/86px Satisfy;
+        text-align: center;
+    }
+
+    p {
+        color: #fff;
+        font: normal normal normal 18px/22px Varela Round;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .p {
+        font: normal normal normal 16px/20px Varela Round;
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+
+    }
+
+    input[type="submit"] {
+        width: 80vw;
+        height: 40px;
+        background-color: #fff;
+        border: 1px solid wheat;
+        color: black;
+        font-family: Varela Round, Regular;
+        margin: 15px auto;
+    }
+
+    label {
+
+        color: #fff;
+        font: normal normal normal 11px/13px Varela Round;
+        text-align: right;
+        margin: 5px;
+    }
+
+    input {
+
+        width: 80vw;
+        height: 40px;
+        margin: 5px;
+        background-color: #F6F6F624;
+        border-color: #fff;
+
+    }
+}

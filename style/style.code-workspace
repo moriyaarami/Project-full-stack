@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../project/page6"
+		},
+		{
+			"path": "../project/page5"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "style"
+	}
+}

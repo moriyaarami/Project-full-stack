@@ -1,0 +1,56 @@
+#mobile {
+    display: none;
+}
+
+#webs {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: white;
+    position: fixed;
+    width: 99vw;
+
+    img {
+        margin: 10px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+
+    .myName {
+        padding-top: 30px;
+        margin-left: 20px;
+        font-weight: bold;
+    }
+
+    ul {
+        width: 500px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        position: absolute;
+        right: 30px;
+        top: 20px;
+        list-style-type: none;
+        text-decoration: none;
+    }
+
+    li {
+
+        width: 80px;
+        height: 40px;
+        font-weight: bold;
+        text-align: center;
+        padding: 8px;
+    }
+
+    a:hover {
+        color: rgb(135, 203, 226);
+        font-size: 1.1em;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+
+    }
+}
