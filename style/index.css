@@ -60,7 +60,7 @@ body {
 
 header {
   background-color: lightblue;
-  height: 40vh;
+  height: 35vh;
   width: 100vw;
 }
 header .container {
@@ -87,7 +87,6 @@ header .container p {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-right: 3px;
 }
 
 .aboutMe {
@@ -132,11 +131,13 @@ header .container p {
 }
 .jobs h1 {
   text-align: center;
+  font-size: 1.5em;
 }
 .jobs p {
   text-align: center;
   margin-bottom: 20px;
   margin-top: 20px;
+  font-size: 1em;
 }
 .jobs .container {
   width: 800px;
@@ -155,15 +156,14 @@ header .container p {
 }
 .jobs .container .box .container2 {
   width: 250px;
-  height: 5vh;
+  height: 50%;
   margin: 0 auto;
 }
 .jobs .container .box .container2 .iconsJobs {
-  width: 50px;
   height: 50px;
   display: flex;
   flex-direction: row;
-  margin-right: 70px;
+  justify-content: center;
   margin-bottom: 10px;
   margin-top: 10px;
 }
@@ -175,13 +175,15 @@ header .container p {
   margin-bottom: 1px;
 }
 .jobs .container .box .container2 a {
+  width: 70%;
   text-decoration: none;
   color: #000;
   border: 1px solid #000;
   background-color: lightblue;
   border-radius: 15px;
-  padding: 2px 5px;
-  margin-right: 60px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }
 .jobs div[class^=image1] {
   background-image: url("opition-page1.png");
@@ -335,7 +337,216 @@ footer i {
   font-size: 1.5em;
 }
 
-@media screen and (min-width: 200px) and (max-width: 600px) {
+@media screen and (min-width: 200px) and (max-width: 300px) {
+  body {
+    direction: ltr;
+    overflow-x: hidden;
+  }
+  #webs {
+    display: none;
+  }
+  #mobile {
+    width: 104vw;
+    height: 5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    position: fixed;
+    background-color: white;
+  }
+  #mobile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0px 10px;
+  }
+  #mobile #nav-phone {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    position: fixed;
+    right: 0;
+    margin-right: 2em;
+  }
+  #mobile #nav-phone > div {
+    width: 2.5em;
+    height: 0.25em;
+    background-color: #1AE0EC;
+  }
+  #mobile #open-close {
+    height: 20vh;
+    width: 30vw;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: start;
+    position: fixed;
+    right: 0;
+    top: 80px;
+    gap: 1em;
+    background-color: white;
+  }
+  #mobile ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 3.5em;
+    direction: rtl;
+    font-size: 1em;
+  }
+  #mobile ul > a {
+    color: black;
+    text-decoration: none;
+  }
+  #mobile a:hover {
+    color: rgb(135, 203, 226);
+    font-size: 1.1em;
+  }
+  header {
+    width: 104vw;
+    max-height: 40vh;
+  }
+  header .container {
+    width: 80%;
+  }
+  header .container h1 {
+    margin-top: 1vh;
+  }
+  header .container p {
+    margin-top: 5px;
+  }
+  .icons {
+    width: 104vw;
+    height: 60px;
+    box-shadow: 3px 3px 12px gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 3px;
+  }
+  .aboutMe {
+    width: 104vw;
+    height: 80vh;
+    text-align: center;
+  }
+  .aboutMe img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 40px;
+  }
+  .aboutMe h1 {
+    margin-top: 10px;
+  }
+  .aboutMe p {
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: 5px;
+  }
+  .jobs {
+    width: 104vw;
+    height: 380vh;
+    background-color: #e0d4d4;
+  }
+  .jobs h1 {
+    text-align: center;
+    font-size: 1.5em;
+  }
+  .jobs p {
+    width: 80vw;
+    text-align: center;
+    margin: 20px auto;
+    font-size: 1em;
+  }
+  .jobs .container {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 55vh);
+    gap: 30px;
+    margin: 0 auto;
+  }
+  .jobs .container .box {
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 3px 3px 12px grey;
+    border-radius: 15px;
+    height: 55vh;
+  }
+  .jobs .container div[class^=image] {
+    background-color: #000;
+    margin: 10px;
+    width: 92%;
+    height: 130px;
+    border-radius: 15px 15px 0px 0px;
+  }
+  .jobs .container .container2 {
+    height: 55%;
+    margin: 5px;
+  }
+  .jobs .container .container2 h1 {
+    text-align: center;
+    font-size: 1.5em;
+  }
+  .jobs .container .container2 p {
+    text-align: center;
+    margin-bottom: 1px;
+    width: 90%;
+    font-size: 1em;
+    margin-top: 5px;
+  }
+  .madeContect {
+    width: 104vw;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .madeContect img {
+    display: none;
+  }
+  .madeContect form {
+    width: 90%;
+    margin: 0;
+    margin-right: 0;
+  }
+  footer {
+    width: 104vw;
+    height: 60vh;
+    justify-content: center;
+  }
+  footer i,
+  footer h2 {
+    font-size: 0.75em;
+    color: white;
+    margin: 0 auto;
+    padding-top: 10px;
+  }
+  footer .icons-footer {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+  }
+  footer .icons-footer div {
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 10px 30px;
+  }
+  footer .icons-footer img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+  }
+  footer .icons-footer p {
+    margin: 0 auto;
+    color: white;
+  }
+}
+@media screen and (min-width: 290px) and (max-width: 600px) {
   body {
     direction: ltr;
   }
@@ -448,11 +659,13 @@ footer i {
   }
   .jobs h1 {
     text-align: center;
+    font-size: 2em;
   }
   .jobs p {
     width: 80vw;
     text-align: center;
     margin: 20px auto;
+    font-size: 1.3em;
   }
   .jobs .container {
     width: 70vw;
@@ -481,28 +694,16 @@ footer i {
     height: 55%;
     margin: 5px;
   }
-  .jobs .container .container2 .iconsJobs {
-    width: 60px;
-    height: 40px;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    margin: 0 auto;
-  }
-  .jobs .container .container2 .box a {
-    background-color: rgb(237, 72, 72);
-    color: white;
-    width: 100px;
-    height: 20px;
-    margin: 0;
-  }
   .jobs .container .container2 h1 {
     text-align: center;
+    font-size: 1.5em;
   }
   .jobs .container .container2 p {
     text-align: center;
     margin-bottom: 1px;
     width: 90%;
+    font-size: 1em;
+    margin-top: 5px;
   }
   .madeContect {
     margin: 0 auto;
