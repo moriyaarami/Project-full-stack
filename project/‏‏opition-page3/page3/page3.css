@@ -7,7 +7,7 @@
 header {
     width: 100vw;
     height: 70vh;
-    background-image: url(../image/bgimage3.jpg);
+    background-image: url(bgimage3.jpg);
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: contain;
@@ -68,7 +68,7 @@ button {
     header {
         width: 100vw;
         height: 50vh;
-        background-image: url(../image/bgimage3-MOBILE.jpg);
+        background-image: url(bgimage3-MOBILE.jpg);
         background-repeat: no-repeat;
         background-position: 50% 0;
         background-size: contain;

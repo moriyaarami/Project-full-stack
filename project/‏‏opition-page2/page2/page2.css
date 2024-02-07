@@ -10,7 +10,7 @@ body {
 
 #bgcimage {
     height: 25vw;
-    background-image: url(../image/bgimage2.jpg);
+    background-image: url(bgimage2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -87,7 +87,7 @@ input[ type="submit"] {
 @media (min-width:250px) and (max-width:290px) {
     #bgcimage {
         height: 55vw;
-        background-image: url(../image/bgimage2MOBILE.jpg);
+        background-image: url(bgimage2MOBILE.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
