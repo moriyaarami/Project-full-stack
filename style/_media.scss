@@ -1,4 +1,4 @@
-@media screen and (min-width: 200px) and (max-width:300px) {
+@media screen and (min-width: 200px) and (max-width:380px) {
     body {
         direction: ltr;
         overflow-x: hidden;
@@ -9,7 +9,7 @@
     }
 
     #mobile {
-        width: 104vw;
+        width: 100vw;
         height: 5em;
         display: flex;
         flex-direction: row;
@@ -35,8 +35,8 @@
         }
 
         #nav-phone>div {
-            width: 2.5em;
-            height: 0.25em;
+            width: 2em;
+            height: 0.2em;
             background-color: #1AE0EC;
         }
 
@@ -76,15 +76,15 @@
 
 
     header {
-        width: 104vw;
-        max-height: 40vh;
+        width: 100vw;
+        height: 40vh;
 
 
         .container {
             width: 80%;
 
             h1 {
-                margin-top: 1vh;
+                margin-top: 5vh;
             }
 
             p {
@@ -94,46 +94,22 @@
 
     }
 
-    .icons {
-        width: 104vw;
-        height: 60px;
-        box-shadow: 3px 3px 12px gray;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-right: 3px;
-
-
-    }
 
     .aboutMe {
-        width: 104vw;
-        height: 80vh;
-        text-align: center;
-
-
-        img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            margin-top: 40px;
-        }
-
-        h1 {
-            margin-top: 20px;
-        }
+        width: 100vw;
+        height: 70vh;
 
         p {
             width: 80vw;
-            margin: 0 auto;
-            margin-top: 5px;
+            margin: 5px auto;
+
         }
 
     }
 
     .jobs {
-        width: 104vw;
-        height: 380vh;
+        width: 100vw;
+        height: 390vh;
         background-color: #e0d4d4;
 
         h1 {
@@ -144,9 +120,8 @@
 
         p {
             width: 80vw;
-            text-align: center;
-            margin: 20px auto;
-            font-size: 1em;
+            margin: 10px auto;
+
         }
 
 
@@ -155,27 +130,17 @@
             display: grid;
             grid-template-columns: repeat(1, 1fr);
             grid-template-rows: repeat(6, 55vh);
-            gap: 30px;
-            margin: 0 auto;
+
 
 
             .box {
                 margin: 0 auto;
-                background-color: #fff;
-                box-shadow: 3px 3px 12px grey;
-                border-radius: 15px;
                 height: 55vh;
-
-
             }
 
 
             div[class^="image"] {
-                background-color: #000;
-                margin: 10px;
                 width: 92%;
-                height: 130px;
-                border-radius: 15px 15px 0px 0px;
             }
 
 
@@ -204,8 +169,6 @@
     }
 
     .madeContect {
-        width: 104vw;
-        margin: 0 auto;
         justify-content: center;
 
         img {
@@ -221,52 +184,27 @@
     }
 
     footer {
-        width: 104vw;
-        height: 60vh;
+        width: 100vw;
+        height: 50vh;
         justify-content: center;
 
-        i,
-        h2 {
-            font-size: 0.75em;
-            color: white;
-            margin: 0 auto;
-            padding-top: 10px;
-
-        }
-
-
         .icons-footer {
-            height: 100px;
+
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-top: 150px;
-
-            div {
-                background-color: white;
-                width: 60px;
-                height: 60px;
-                border-radius: 50%;
-                margin: 10px 30px;
-            }
-
-            img {
-                width: 50px;
-                height: 50px;
-                margin: 5px;
-            }
+            justify-content: flex-start;
 
             p {
                 margin: 0 auto;
-                color: white;
             }
         }
     }
+
 }
 
 
-@media screen and (min-width: 290px) and (max-width:600px) {
+
+@media screen and (min-width: 378px) and (max-width:600px) {
     body {
         direction: ltr;
     }
@@ -344,14 +282,14 @@
 
     header {
         width: 100vw;
-        max-height: 40vh;
+        max-height: 30vh;
 
 
         .container {
-            width: 40%;
+            width: 70%;
 
             h1 {
-                margin-top: 1vh;
+                margin-top: 3vh;
             }
 
             p {
@@ -361,56 +299,26 @@
 
     }
 
-    .icons {
-        width: 100vw;
-        height: 60px;
-        box-shadow: 3px 3px 12px gray;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-right: 3px;
-
-
-    }
-
     .aboutMe {
-        width: 100vw;
-        height: 80vh;
-        text-align: center;
+        height: 50vh;
 
-
-        img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            margin-top: 40px;
-        }
-
-        h1 {
-            margin-top: 10px;
-        }
 
         p {
             width: 70vw;
-            margin: 0 auto;
-            margin-top: 5px;
         }
 
     }
 
     .jobs {
-        width: 100vw;
-        height: 360vh;
-        background-color: #e0d4d4;
+        height: 320vh;
+
 
         h1 {
-            text-align: center;
             font-size: 2em;
         }
 
         p {
             width: 80vw;
-            text-align: center;
             margin: 20px auto;
             font-size: 1.3em;
         }
@@ -420,49 +328,33 @@
             width: 70vw;
             display: grid;
             grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(6, 50vh);
-            gap: 30px;
-            margin: 0 auto;
-
+            grid-template-rows: repeat(6, 45vh);
 
             .box {
-                width: 100%;
-                height: 50vh;
-                background-color: #fff;
-                box-shadow: 3px 3px 12px grey;
-                border-radius: 15px;
-
+                height: 45vh;
             }
 
 
             div[class^="image"] {
-                background-color: #000;
-                margin: 10px;
                 width: 92%;
-                height: 130px;
-                border-radius: 15px 15px 0px 0px;
+                height: 40%;
             }
 
-
             .container2 {
-                width: 250px;
-                height: 55%;
-                margin: 5px;
-
+                width: 92%;
+                height: 60%;
 
                 h1 {
-                    text-align: center;
                     font-size: 1.5em;
                 }
 
                 p {
                     text-align: center;
                     margin-bottom: 1px;
-                    width: 90%;
+                    width: 100%;
                     font-size: 1em;
                     margin-top: 5px;
                 }
-
             }
 
         }
@@ -470,7 +362,6 @@
     }
 
     .madeContect {
-        margin: 0 auto;
         justify-content: center;
 
         img {
@@ -485,44 +376,18 @@
     }
 
     footer {
-        height: 60vh;
+
+        height: 40vh;
         justify-content: center;
 
-        i,
-        h2 {
-            font-size: 1em;
-            color: white;
-            margin: 0 auto;
-            padding-top: 10px;
-
-        }
-
-
         .icons-footer {
-            height: 100px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-top: 150px;
-
-            div {
-                background-color: white;
-                width: 60px;
-                height: 60px;
-                border-radius: 50%;
-                margin: 10px 30px;
-            }
-
-            img {
-                width: 50px;
-                height: 50px;
-                margin: 5px;
-            }
+            justify-content: flex-start;
 
             p {
                 margin: 0 auto;
-                color: white;
+
             }
         }
     }

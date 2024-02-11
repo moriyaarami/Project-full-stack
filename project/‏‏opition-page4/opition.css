@@ -6,8 +6,8 @@
 
 body {
     direction: rtl;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow: hidden;
+
 }
 
 .nav-item {
