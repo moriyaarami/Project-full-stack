@@ -23,9 +23,6 @@ body {
 }
 
 .card-body {
-    /*   background-image: url(../image/OIP.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover; */
     background-color: lightblue;
 }
 
@@ -41,14 +38,6 @@ body {
     margin-top: 10px;
     color: #000000;
 }
-
-
-/* a .btn-primary {
-    background-color: #fff;
-    color: black;
-}
- */
-
 
 .img {
     box-shadow: 3px 3px 12px gray;
@@ -77,7 +66,6 @@ body {
 footer {
     color: rgb(0, 0, 0);
     width: 100vw;
-    height: 20px;
     padding-right: 30px;
     background-color: lightblue;
     position: absolute;
