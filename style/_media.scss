@@ -1,212 +1,7 @@
-@media screen and (min-width: 200px) and (max-width:380px) {
+@media screen and (min-width: 250px) and (max-width:600px) {
     body {
         direction: ltr;
         overflow-x: hidden;
-    }
-
-    #webs {
-        display: none;
-    }
-
-    #mobile {
-        width: 100vw;
-        height: 5em;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: start;
-        position: fixed;
-        background-color: white;
-
-        img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            margin: 0px 10px;
-        }
-
-        #nav-phone {
-            display: flex;
-            flex-direction: column;
-            gap: 0.5em;
-            position: fixed;
-            right: 0;
-            margin-right: 2em;
-        }
-
-        #nav-phone>div {
-            width: 2em;
-            height: 0.2em;
-            background-color: #1AE0EC;
-        }
-
-        #open-close {
-            height: 20vh;
-            width: 30vw;
-            display: flex;
-            text-align: center;
-            flex-direction: column;
-            justify-content: start;
-            position: fixed;
-            right: 0;
-            top: 80px;
-            gap: 1em;
-            background-color: white;
-        }
-
-        ul {
-            list-style-type: none;
-            display: flex;
-            flex-direction: row;
-            gap: 3.5em;
-            direction: rtl;
-            font-size: 1em;
-        }
-
-        ul>a {
-            color: black;
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: rgb(135, 203, 226);
-            font-size: 1.1em;
-        }
-    }
-
-
-    header {
-        width: 100vw;
-        height: 40vh;
-
-
-        .container {
-            width: 80%;
-
-            h1 {
-                margin-top: 5vh;
-            }
-
-            p {
-                margin-top: 5px;
-            }
-        }
-
-    }
-
-
-    .aboutMe {
-        width: 100vw;
-        height: 70vh;
-
-        p {
-            width: 80vw;
-            margin: 5px auto;
-
-        }
-
-    }
-
-    .jobs {
-        width: 100vw;
-        height: 390vh;
-        background-color: #e0d4d4;
-
-        h1 {
-            text-align: center;
-            font-size: 1.5em;
-            padding-top: 15px;
-        }
-
-        p {
-            width: 80vw;
-            margin: 10px auto;
-
-        }
-
-
-        .container {
-            width: 100vw;
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(6, 55vh);
-
-
-
-            .box {
-                margin: 0 auto;
-                height: 55vh;
-            }
-
-
-            div[class^="image"] {
-                width: 92%;
-            }
-
-
-            .container2 {
-                height: 55%;
-                margin: 5px;
-
-
-                h1 {
-                    text-align: center;
-                    font-size: 1.5em;
-                }
-
-                p {
-                    text-align: center;
-                    margin-bottom: 1px;
-                    width: 90%;
-                    font-size: 1em;
-                    margin-top: 5px;
-                }
-
-            }
-
-        }
-
-    }
-
-    .madeContect {
-        justify-content: center;
-
-        img {
-            display: none;
-        }
-
-        form {
-            width: 90%;
-            margin: 0;
-            margin-right: 0;
-        }
-
-    }
-
-    footer {
-        width: 100vw;
-        height: 50vh;
-        justify-content: center;
-
-        .icons-footer {
-
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-
-            p {
-                margin: 0 auto;
-            }
-        }
-    }
-
-}
-
-
-
-@media screen and (min-width: 378px) and (max-width:600px) {
-    body {
-        direction: ltr;
     }
 
     #webs {
@@ -246,7 +41,7 @@
         }
 
         #open-close {
-            height: 20vh;
+
             width: 30vw;
             display: flex;
             text-align: center;
@@ -281,9 +76,6 @@
 
 
     header {
-        width: 100vw;
-        max-height: 30vh;
-
 
         .container {
             width: 70%;
@@ -300,18 +92,12 @@
     }
 
     .aboutMe {
-        height: 50vh;
-
-
         p {
             width: 70vw;
         }
-
     }
 
     .jobs {
-        height: 320vh;
-
 
         h1 {
             font-size: 2em;
@@ -328,16 +114,12 @@
             width: 70vw;
             display: grid;
             grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(6, 45vh);
-
-            .box {
-                height: 45vh;
-            }
-
+            grid-template-rows: repeat(6, 1fr);
+            justify-content: center;
+            align-items: center;
 
             div[class^="image"] {
                 width: 92%;
-                height: 40%;
             }
 
             .container2 {
@@ -363,6 +145,7 @@
 
     .madeContect {
         justify-content: center;
+        padding: 30px;
 
         img {
             display: none;
@@ -377,18 +160,12 @@
 
     footer {
 
-        height: 40vh;
-        justify-content: center;
+        flex-direction: column;
 
-        .icons-footer {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
+        p {
+            margin: 0 auto;
 
-            p {
-                margin: 0 auto;
-
-            }
         }
+
     }
 }

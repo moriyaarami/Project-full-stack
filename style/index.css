@@ -18,7 +18,7 @@ body {
   flex-direction: row-reverse;
   background-color: white;
   position: fixed;
-  width: 99vw;
+  width: 100vw;
 }
 #webs img {
   margin: 10px;
@@ -34,7 +34,7 @@ body {
 #webs ul {
   width: 500px;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   justify-content: space-between;
   position: absolute;
   right: 30px;
@@ -60,7 +60,6 @@ body {
 
 header {
   background-color: lightblue;
-  height: 35vh;
   width: 100vw;
 }
 header .container {
@@ -91,8 +90,8 @@ header .container p {
 
 .aboutMe {
   width: 100vw;
-  height: 50vh;
   text-align: center;
+  padding-bottom: 20px;
 }
 .aboutMe img {
   width: 100px;
@@ -126,12 +125,13 @@ header .container p {
 
 .jobs {
   width: 100vw;
-  height: 130vh;
+  /*  height: 130vh; */
   background-color: #e0d4d4;
 }
 .jobs h1 {
   text-align: center;
   font-size: 1.5em;
+  font-weight: bold;
 }
 .jobs p {
   text-align: center;
@@ -143,15 +143,16 @@ header .container p {
   width: 800px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 50vh);
+  grid-template-rows: repeat(2, 1.2fr);
   gap: 30px;
   margin: 0 auto;
+  padding-bottom: 30px;
 }
 .jobs .container .box {
   background-color: #fff;
   box-shadow: 3px 3px 12px grey;
   border-radius: 15px;
-  height: 50vh;
+  /* height: 50vh; */
   margin-top: 20px;
 }
 .jobs .container .box .container2 {
@@ -184,6 +185,7 @@ header .container p {
   display: flex;
   justify-content: center;
   margin: 0 auto;
+  margin-bottom: 10px;
 }
 .jobs div[class^=image1] {
   background-image: url("../Images/opition-page1.png");
@@ -245,7 +247,7 @@ header .container p {
   flex-direction: row-reverse;
   align-items: center;
   justify-content: start;
-  height: 70vh;
+  /* height: 70vh; */
   width: 100vw;
   background-color: lightblue;
   border-top: 3px solid black;
@@ -292,35 +294,26 @@ header .container p {
 }
 
 footer {
-  height: 100px;
-  width: 100vw;
-  background-color: rgb(0, 0, 0);
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-}
-footer .icons-footer {
-  /*   width: 200px; */
-  height: 80px;
+  padding: 20px;
+  background-color: #000000;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
 }
-footer .icons-footer div {
+footer div {
   background-color: white;
   width: 60px;
   height: 60px;
   border-radius: 50%;
   margin: 10px 30px;
 }
-footer .icons-footer img {
+footer img {
   width: 50px;
   height: 50px;
   margin: 5px;
 }
-footer .icons-footer p {
+footer p {
   margin-left: 10px;
   color: white;
 }
@@ -335,163 +328,10 @@ aside i {
   font-size: 1.5em;
 }
 
-@media screen and (min-width: 200px) and (max-width: 380px) {
+@media screen and (min-width: 250px) and (max-width: 600px) {
   body {
     direction: ltr;
     overflow-x: hidden;
-  }
-  #webs {
-    display: none;
-  }
-  #mobile {
-    width: 100vw;
-    height: 5em;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: start;
-    position: fixed;
-    background-color: white;
-  }
-  #mobile img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin: 0px 10px;
-  }
-  #mobile #nav-phone {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em;
-    position: fixed;
-    right: 0;
-    margin-right: 2em;
-  }
-  #mobile #nav-phone > div {
-    width: 2em;
-    height: 0.2em;
-    background-color: #1AE0EC;
-  }
-  #mobile #open-close {
-    height: 20vh;
-    width: 30vw;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    justify-content: start;
-    position: fixed;
-    right: 0;
-    top: 80px;
-    gap: 1em;
-    background-color: white;
-  }
-  #mobile ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    gap: 3.5em;
-    direction: rtl;
-    font-size: 1em;
-  }
-  #mobile ul > a {
-    color: black;
-    text-decoration: none;
-  }
-  #mobile a:hover {
-    color: rgb(135, 203, 226);
-    font-size: 1.1em;
-  }
-  header {
-    width: 100vw;
-    height: 40vh;
-  }
-  header .container {
-    width: 80%;
-  }
-  header .container h1 {
-    margin-top: 5vh;
-  }
-  header .container p {
-    margin-top: 5px;
-  }
-  .aboutMe {
-    width: 100vw;
-    height: 70vh;
-  }
-  .aboutMe p {
-    width: 80vw;
-    margin: 5px auto;
-  }
-  .jobs {
-    width: 100vw;
-    height: 390vh;
-    background-color: #e0d4d4;
-  }
-  .jobs h1 {
-    text-align: center;
-    font-size: 1.5em;
-    padding-top: 15px;
-  }
-  .jobs p {
-    width: 80vw;
-    margin: 10px auto;
-  }
-  .jobs .container {
-    width: 100vw;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(6, 55vh);
-  }
-  .jobs .container .box {
-    margin: 0 auto;
-    height: 55vh;
-  }
-  .jobs .container div[class^=image] {
-    width: 92%;
-  }
-  .jobs .container .container2 {
-    height: 55%;
-    margin: 5px;
-  }
-  .jobs .container .container2 h1 {
-    text-align: center;
-    font-size: 1.5em;
-  }
-  .jobs .container .container2 p {
-    text-align: center;
-    margin-bottom: 1px;
-    width: 90%;
-    font-size: 1em;
-    margin-top: 5px;
-  }
-  .madeContect {
-    justify-content: center;
-  }
-  .madeContect img {
-    display: none;
-  }
-  .madeContect form {
-    width: 90%;
-    margin: 0;
-    margin-right: 0;
-  }
-  footer {
-    width: 100vw;
-    height: 50vh;
-    justify-content: center;
-  }
-  footer .icons-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-  footer .icons-footer p {
-    margin: 0 auto;
-  }
-}
-@media screen and (min-width: 378px) and (max-width: 600px) {
-  body {
-    direction: ltr;
   }
   #webs {
     display: none;
@@ -526,7 +366,6 @@ aside i {
     background-color: #1AE0EC;
   }
   #mobile #open-close {
-    height: 20vh;
     width: 30vw;
     display: flex;
     text-align: center;
@@ -554,10 +393,6 @@ aside i {
     color: rgb(135, 203, 226);
     font-size: 1.1em;
   }
-  header {
-    width: 100vw;
-    max-height: 30vh;
-  }
   header .container {
     width: 70%;
   }
@@ -567,14 +402,8 @@ aside i {
   header .container p {
     margin-top: 5px;
   }
-  .aboutMe {
-    height: 50vh;
-  }
   .aboutMe p {
     width: 70vw;
-  }
-  .jobs {
-    height: 320vh;
   }
   .jobs h1 {
     font-size: 2em;
@@ -588,14 +417,12 @@ aside i {
     width: 70vw;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(6, 45vh);
-  }
-  .jobs .container .box {
-    height: 45vh;
+    grid-template-rows: repeat(6, 1fr);
+    justify-content: center;
+    align-items: center;
   }
   .jobs .container div[class^=image] {
     width: 92%;
-    height: 40%;
   }
   .jobs .container .container2 {
     width: 92%;
@@ -613,6 +440,7 @@ aside i {
   }
   .madeContect {
     justify-content: center;
+    padding: 30px;
   }
   .madeContect img {
     display: none;
@@ -622,15 +450,9 @@ aside i {
     margin-right: 0;
   }
   footer {
-    height: 40vh;
-    justify-content: center;
-  }
-  footer .icons-footer {
-    display: flex;
     flex-direction: column;
-    justify-content: flex-start;
   }
-  footer .icons-footer p {
+  footer p {
     margin: 0 auto;
   }
 }/*# sourceMappingURL=index.css.map */
