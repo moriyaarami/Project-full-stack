@@ -143,7 +143,7 @@ header .container p {
   width: 800px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1.2fr);
+  grid-template-rows: repeat(3, 1fr);
   gap: 30px;
   margin: 0 auto;
   padding-bottom: 30px;
@@ -152,7 +152,6 @@ header .container p {
   background-color: #fff;
   box-shadow: 3px 3px 12px grey;
   border-radius: 15px;
-  /* height: 50vh; */
   margin-top: 20px;
 }
 .jobs .container .box .container2 {
@@ -240,6 +239,18 @@ header .container p {
   width: 250px;
   height: 130px;
   border-radius: 15px 15px 0px 0px;
+}
+.jobs div[class^=image7] {
+  background-image: url("../Images/opition-page7.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 10px;
+  width: 250px;
+  height: 130px;
+  border-radius: 15px 15px 0px 0px;
+}
+.jobs .box7 {
+  grid-column: 2/3;
 }
 
 .madeContect {
@@ -417,7 +428,7 @@ aside i {
     width: 70vw;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(7, 1fr);
     justify-content: center;
     align-items: center;
   }
@@ -437,6 +448,9 @@ aside i {
     width: 100%;
     font-size: 1em;
     margin-top: 5px;
+  }
+  .jobs .container .box7 {
+    grid-column: 1/2;
   }
   .madeContect {
     justify-content: center;

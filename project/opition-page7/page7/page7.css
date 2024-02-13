@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #0EE1E1;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    /* height: 50vh; */
+    padding: 80px;
+}
+
+header #titel {
+    width: 60vw;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+header #titel h1 {
+    font: normal normal 900 66px/97px Heebo;
+}
+
+header #titel p {
+    font: normal normal normal 20px/29px Heebo;
+}
+
+header>img[src^="offene"] {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+header>img[src^="Icon"] {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    /*  margin: 10px; */
+}
+
+#box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 20px;
+    /*  height: 25vh; */
+    background-color: #fff;
+    margin: 30px 20px;
+}
+
+.box {
+    background-color: #F8F8F8;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    margin: 20px auto;
+}
+
+.container img {
+    margin-bottom: 15px;
+}
+
+.container h1 {
+    color: #0EE1E1;
+    font: normal normal 900 30px/44px Heebo;
+}
+
+.container p {
+    text-align: center;
+    margin-top: 10px;
+    font: normal normal normal 15px/22px Heebo;
+}
+
+section {
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+section .map {
+    width: 60vw;
+    background-color: #0EE1E1;
+}
+
+section .map img {
+    width: 85%;
+    height: 85%;
+    margin: 7% 7.5%;
+}
+
+section .form {
+    width: 40vw;
+    background-color: #F0FFFF;
+}
+
+section .form form {
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+    margin: 10px auto;
+    direction: rtl;
+}
+
+form h1 {
+    font: normal normal 900 46px/67px Heebo;
+}
+
+form p {
+    text-align: right;
+    font: normal normal normal 15px/22px Heebo;
+    margin-bottom: 30px;
+}
+
+form input {
+    width: 100%;
+    height: 41px;
+    background-color: #E5EEFF;
+    border: none;
+    border-bottom: 3px solid #0EE1E1;
+    margin-bottom: 10px;
+}
+
+form textarea {
+    width: 100%;
+    height: 100px;
+    background-color: #E5EEFF;
+    border: none;
+    border-bottom: 3px solid #0EE1E1;
+    margin-bottom: 10px;
+}
+
+form label {
+    font: normal normal bold 13px/19px Heebo;
+}
+
+form input[type="submit"] {
+    font: normal normal bold 20px/28px Heebo;
+    background-color: #0EE1E1;
+    margin-top: 20px;
+}
+
+footer {
+    border-bottom: 10px solid #0EE1E1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div {
+    width: 100px;
+    height: 100px;
+    background: #0EE1E1 0% 0% no-repeat padding-box;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+footer div img {
+    margin: 33%;
+}
+
+@media (min-width:250px) and (max-width:600px) {
+    header>img[src^="Icon"] {
+        display: none;
+    }
+
+    header {
+        flex-direction: column;
+        direction: rtl;
+        justify-content: space-evenly;
+        padding: 20px;
+    }
+
+    header #titel {
+        width: 80vw;
+        align-items: flex-start;
+        margin-right: 20px;
+        margin-bottom: 50px;
+    }
+
+    header #titel h1 {
+        font: normal normal 900 33px/49px Heebo;
+    }
+
+    header #titel p {
+        font: normal normal normal 15px/22px Heebo;
+    }
+
+
+    header>img[src^="offene"] {
+        width: 100px;
+        height: 100px;
+        margin: 30px;
+
+    }
+
+    #box {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        /* height: 185vh; */
+
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 60%;
+        margin: 50px auto;
+    }
+
+    section {
+        flex-direction: column-reverse;
+        /*  height: 90vh; */
+    }
+
+    section .map {
+        width: 100vw;
+    }
+
+    section .form {
+        width: 100vw;
+        padding-top: 20px;
+    }
+
+    section .form form {
+        margin: 30px auto;
+        width: 80%;
+    }
+
+    form h1 {
+        font: normal normal 900 32px/47px Heebo;
+    }
+
+    form p {
+        font: normal normal normal 15px/22px Heebo;
+    }
+
+    form label {
+        font: normal normal bold 12px/18px Heebo;
+    }
+
+    form input[type="submit"] {
+        font: normal normal bold 13px/19px Heebo;
+    }
+
+    footer div {
+        width: 70px;
+        height: 65px;
+        background: #0EE1E1 0% 0% no-repeat padding-box;
+        border-radius: 50%;
+        margin: 10px;
+    }
+
+    footer div img {
+        margin: 27%;
+    }
+}
