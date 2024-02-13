@@ -455,4 +455,14 @@ aside i {
   footer p {
     margin: 0 auto;
   }
+  aside {
+    background-color: #e0d4d4;
+    width: 100vw;
+    padding: 0;
+  }
+  aside i {
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    margin-left: 10px;
+  }
 }/*# sourceMappingURL=index.css.map */
