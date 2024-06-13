@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Snake</title>
+</head>
+
+<body onload="createBoard()">
+    <h1>סנייק</h1>
+    <div id="board"></div>
+    <div id="responsive">
+        <div id="right">⇨</div>
+        <div id="left">⇦</div>
+        <div id="up">⇧</div>
+        <div id="down">⇩</div>
+    </div>
+    <p id="score"><b>ניקוד: </b> <span>0</span></p>
+    <p id="lastScore"><b>ניקוד קודם: </b><span>0</span></p>
+    <!-- <p id="theBestScore"><b>שיא: </b><span></span></p> -->
+    <!-- <button id="button" onclick="pause()" ondblclick="resume()">Pause</button> -->
+
+</body>
+
+</html>

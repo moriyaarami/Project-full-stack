@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>רשימת קניות</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="container">
+        <div class="container">
+            <h1>רשימת קניות</h1>
+            <p>רשימת הקניות שלך, <br>באפשרותך להוסיף מוצר לרשימה ולמחוק את המוצר במקרה הצורך.</p>
+            <ul class="tasks">
+
+            </ul>
+            <label for="text">שם הפריט</label>
+            <input type="text" id="text" onkeyup="keyup(event)">
+            <button onclick="add()">הוסף</button>
+        </div>
+    </div>
+</body>
+
+</html>
