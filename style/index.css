@@ -126,7 +126,8 @@ header .container p {
 .jobs {
   width: 100vw;
   /*  height: 130vh; */
-  background-color: #e0d4d4;
+  background-color: #bbbbbb;
+  margin-bottom: 20px;
 }
 .jobs h1 {
   text-align: center;
@@ -250,6 +251,137 @@ header .container p {
   border-radius: 15px 15px 0px 0px;
 }
 .jobs .box7 {
+  grid-column: 2/3;
+}
+
+.jsProject {
+  border-top: #000;
+  width: 100vw;
+  /*  height: 130vh; */
+  background-color: #e0d4d4;
+}
+.jsProject h1 {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.jsProject p {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 1em;
+}
+.jsProject .container {
+  width: 800px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 30px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+.jsProject .container .box {
+  background-color: #fff;
+  box-shadow: 3px 3px 12px grey;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+.jsProject .container .box .container2 {
+  width: 250px;
+  height: 50%;
+  margin: 0 auto;
+}
+.jsProject .container .box .container2 .iconsJobs {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.jsProject .container .box .container2 h1 {
+  text-align: center;
+}
+.jsProject .container .box .container2 p {
+  text-align: center;
+  margin-bottom: 1px;
+}
+.jsProject .container .box .container2 a {
+  width: 70%;
+  text-decoration: none;
+  color: #000;
+  border: 1px solid #000;
+  background-color: lightblue;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.jsProject div[class^=image1] {
+  background-image: url("../Images/opition-page1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 10px;
+  width: 250px;
+  height: 130px;
+  border-radius: 15px 15px 0px 0px;
+}
+.jsProject div[class^=image2] {
+  background-image: url("../Images/opition-page2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 10px;
+  width: 250px;
+  height: 130px;
+  border-radius: 15px 15px 0px 0px;
+}
+.jsProject div[class^=image3] {
+  background-image: url("../Images/opition-page3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 10px;
+  width: 250px;
+  height: 130px;
+  border-radius: 15px 15px 0px 0px;
+}
+.jsProject div[class^=image4] {
+  background-image: url("../Images/opition-page4.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 10px;
+  width: 250px;
+  height: 130px;
+  border-radius: 15px 15px 0px 0px;
+}
+.jsProject div[class^=image5] {
+  background-image: url("../Images/opition-page5.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 10px;
+  width: 250px;
+  height: 130px;
+  border-radius: 15px 15px 0px 0px;
+}
+.jsProject div[class^=image6] {
+  background-image: url("../Images/opition-page6.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 10px;
+  width: 250px;
+  height: 130px;
+  border-radius: 15px 15px 0px 0px;
+}
+.jsProject div[class^=image7] {
+  background-image: url("../Images/opition-page7.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 10px;
+  width: 250px;
+  height: 130px;
+  border-radius: 15px 15px 0px 0px;
+}
+.jsProject .box7 {
   grid-column: 2/3;
 }
 
@@ -416,15 +548,18 @@ aside i {
   .aboutMe p {
     width: 70vw;
   }
-  .jobs h1 {
+  .jobs h1,
+  .jsProject h1 {
     font-size: 2em;
   }
-  .jobs p {
+  .jobs p,
+  .jsProject p {
     width: 80vw;
     margin: 20px auto;
     font-size: 1.3em;
   }
-  .jobs .container {
+  .jobs .container,
+  .jsProject .container {
     width: 70vw;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -432,24 +567,29 @@ aside i {
     justify-content: center;
     align-items: center;
   }
-  .jobs .container div[class^=image] {
+  .jobs .container div[class^=image],
+  .jsProject .container div[class^=image] {
     width: 92%;
   }
-  .jobs .container .container2 {
+  .jobs .container .container2,
+  .jsProject .container .container2 {
     width: 92%;
     height: 60%;
   }
-  .jobs .container .container2 h1 {
+  .jobs .container .container2 h1,
+  .jsProject .container .container2 h1 {
     font-size: 1.5em;
   }
-  .jobs .container .container2 p {
+  .jobs .container .container2 p,
+  .jsProject .container .container2 p {
     text-align: center;
     margin-bottom: 1px;
     width: 100%;
     font-size: 1em;
     margin-top: 5px;
   }
-  .jobs .container .box7 {
+  .jobs .container .box7,
+  .jsProject .container .box7 {
     grid-column: 1/2;
   }
   .madeContect {

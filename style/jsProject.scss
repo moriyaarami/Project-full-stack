@@ -1,13 +1,14 @@
-.jobs {
+.jsProject {
+
     width: 100vw;
     /*  height: 130vh; */
-    background-color: #bbbbbb;
-    margin-bottom: 20px;
+    background-color: #e0d4d4;
 
     h1 {
         text-align: center;
         font-size: 1.5em;
         font-weight: bold;
+        margin-top: 10px;
     }
 
     p {
@@ -77,7 +78,7 @@
     }
 
     div[class^="image1"] {
-        background-image: url("../Images/opition-page1.png");
+        background-image: url();
         background-repeat: no-repeat;
         background-size: cover;
         margin: 10px;
@@ -87,7 +88,7 @@
     }
 
     div[class^="image2"] {
-        background-image: url("../Images/opition-page2.png");
+        background-image: url();
         background-repeat: no-repeat;
         background-size: cover;
         margin: 10px;
@@ -136,18 +137,9 @@
         border-radius: 15px 15px 0px 0px;
     }
 
-    div[class^="image7"] {
-        background-image: url("../Images/opition-page7.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin: 10px;
-        width: 250px;
-        height: 130px;
-        border-radius: 15px 15px 0px 0px;
-    }
 
-    .box7 {
+    /*  .box7 {
         grid-column: 2/3;
-    }
+    } */
 
 }
