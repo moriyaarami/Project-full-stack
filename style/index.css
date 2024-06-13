@@ -255,15 +255,18 @@ header .container p {
 }
 
 .jsProject {
-  border-top: #000;
   width: 100vw;
   /*  height: 130vh; */
   background-color: #e0d4d4;
+  /*  .box7 {
+      grid-column: 2/3;
+  } */
 }
 .jsProject h1 {
   text-align: center;
   font-size: 1.5em;
   font-weight: bold;
+  margin-top: 10px;
 }
 .jsProject p {
   text-align: center;
@@ -319,7 +322,7 @@ header .container p {
   margin-bottom: 10px;
 }
 .jsProject div[class^=image1] {
-  background-image: url("../Images/opition-page1.png");
+  background-image: url();
   background-repeat: no-repeat;
   background-size: cover;
   margin: 10px;
@@ -328,7 +331,7 @@ header .container p {
   border-radius: 15px 15px 0px 0px;
 }
 .jsProject div[class^=image2] {
-  background-image: url("../Images/opition-page2.png");
+  background-image: url();
   background-repeat: no-repeat;
   background-size: cover;
   margin: 10px;
@@ -371,18 +374,6 @@ header .container p {
   width: 250px;
   height: 130px;
   border-radius: 15px 15px 0px 0px;
-}
-.jsProject div[class^=image7] {
-  background-image: url("../Images/opition-page7.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 10px;
-  width: 250px;
-  height: 130px;
-  border-radius: 15px 15px 0px 0px;
-}
-.jsProject .box7 {
-  grid-column: 2/3;
 }
 
 .madeContect {
