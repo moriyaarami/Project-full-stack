@@ -9,15 +9,8 @@ let random;
 let myInterval;
 let score = 0;
 
-
-
 let lastScore = localStorage.getItem('lastTurnScore');
-
 document.querySelector('#lastScore span').innerText = lastScore;
-
-
-
-
 
 function createBoard() {
     board.style.gridTemplateColumns = `repeat(${width}, 1fr)`;
@@ -125,8 +118,6 @@ function move(dir) {
     if (head == random) {
         score++;
         document.querySelector('#score span').innerText = score;
-        localStorage.setItem('score', score);
-
         sound("./Pebble.ogg");
         setApple();
     } else {
@@ -144,6 +135,7 @@ function autoMove() {
 }
 
 function gaemeOver() {
+    localStorage.setItem('lastTurnScore', score);
     isGameOver = true;
     clearInterval(myInterval);
     sound("./Country_Blues.ogg");
@@ -175,45 +167,9 @@ function newGame() {
     color();
     setApple();
     document.querySelector('#score span').innerText = score;
-
-
-    localStorage.setItem('lastTurnScore', localStorage.getItem('score'));
-
-
     document.querySelector('#lastScore span').innerText = localStorage.getItem('lastTurnScore');
 
-
-
 }
-
-
-
-
-/* function pause() {
-    clearInterval(myInterval);
-    document.querySelector('#button').removeEventListener('click', pause);
-    document.querySelector('#button').addEventListener('click', resume);
-    document.querySelector('#button').innerText = 'resume';
-}
-
-function resume() {
-    autoMove();
-    document.querySelector('#button').removeEventListener('click', resume);
-    document.querySelector('#button').addEventListener('click', pause);
-    document.querySelector('#button').innerText = 'pause';
-} */
-
-/* function localStorage() {
-    localStorage.setItem('score', score);
-    const lastScore = localStorage.getItem('score');
-    if (lastScore > score) {
-        document.querySelector('#record span').innerHTML = lastScore;
-    } else {
-        localStorage.setItem('score', score);
-    }
-
-} */
-
 
 
 window.addEventListener("keydown", ev => {
@@ -241,17 +197,3 @@ document.getElementById("right").addEventListener("click", () => {
 document.getElementById("left").addEventListener("click", () => {
     move("left");
 });
-
-// window.addEventListener("keydown", ev => {
-//     ev.preventDefault();
-
-//     if (ev.key === "ArrowUp") {
-//         move("up");
-//     } else if (ev.key === "ArrowRight") {
-//         move("right");
-//     } else if (ev.key === "ArrowDown") {
-//         move("down");
-//     } else if (ev.key === "ArrowLeft") {
-//         move("left");
-//     }
-// });

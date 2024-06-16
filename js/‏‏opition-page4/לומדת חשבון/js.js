@@ -15,7 +15,7 @@ const div = document.querySelector('#answer');
 
 select.addEventListener('change', fnc = () => {
     const selected = select.value;
-    const Index = select.selectedIndex;
+
     maxNumber = selected == 'קל' ? 10 : selected == 'בינוני' ? 50 : selected == 'קשה' ? 100 : 0;
 
     ;
@@ -30,17 +30,13 @@ function RandomNumber(n) {
     let n2 = Math.floor(Math.random() * n) + 1;
 
     ex = `${n1} ${op} ${n2}`;
-    console.log(ex);
     task.innerHTML = ex;
 
     result = eval(ex);
-    console.log(result);
 }
 
 const check = () => {
     const answer = document.querySelector("#value").value;
-
-
 
     if (answer == result) {
         numOfRightEx++;
@@ -66,13 +62,9 @@ const check = () => {
 
         setTimeout(() => RandomNumber(maxNumber), 2500)
 
-
-
-
     }
 
     document.querySelector("#value").value = "";
-
 
 }
 
@@ -99,22 +91,6 @@ localStorage.setItem('numOfRightEx', numOfRightEx);
 
 localStorage.getItem('numOfRightEx');
 
-
-
-/* const btn = document.querySelectorAll(".btn-container button");
-console.log(btn);
-
-btn.forEach(b => {
-    b.addEventListener("click", btnClick = () => {
-        document.querySelector("#value").value += b.textContent;
-
-    });
-});
-const delteBtn = document.querySelector('#delte');
-delteBtn.removeEventListener("click", btnClick());
-delteBtn.addEventListener("click", delte = () => {
-    document.querySelector("#value").value = '';
-}); */
 
 
 

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -86,6 +87,10 @@ header .container p {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.js {
+  width: 60px;
 }
 
 .aboutMe {
@@ -322,7 +327,7 @@ header .container p {
   margin-bottom: 10px;
 }
 .jsProject div[class^=image1] {
-  background-image: url();
+  background-image: url("../Images/רשימת-קניות.png");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 10px;
@@ -331,7 +336,7 @@ header .container p {
   border-radius: 15px 15px 0px 0px;
 }
 .jsProject div[class^=image2] {
-  background-image: url();
+  background-image: url("../Images/memoryGame.png");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 10px;
@@ -340,7 +345,7 @@ header .container p {
   border-radius: 15px 15px 0px 0px;
 }
 .jsProject div[class^=image3] {
-  background-image: url("../Images/opition-page3.png");
+  background-image: url("../Images/מזג-אוויר.png");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 10px;
@@ -349,7 +354,7 @@ header .container p {
   border-radius: 15px 15px 0px 0px;
 }
 .jsProject div[class^=image4] {
-  background-image: url("../Images/opition-page4.png");
+  background-image: url("../Images/לומדת-חשבון.png");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 10px;
@@ -358,7 +363,7 @@ header .container p {
   border-radius: 15px 15px 0px 0px;
 }
 .jsProject div[class^=image5] {
-  background-image: url("../Images/opition-page5.png");
+  background-image: url("../Images/איקס עיגול.png");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 10px;
@@ -367,7 +372,7 @@ header .container p {
   border-radius: 15px 15px 0px 0px;
 }
 .jsProject div[class^=image6] {
-  background-image: url("../Images/opition-page6.png");
+  background-image: url("../Images/סנייק.png");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 10px;
